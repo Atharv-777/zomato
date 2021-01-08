@@ -572,25 +572,74 @@ body, html{
             font-weight: bold;
             color:  rgba(255, 0, 0, 0.603);
         }
-        #footerLanguage{
-            width: 200px;
+
+        .optionContainer{
+            display: flex;
+            margin: 0 0 0 550px;
+        }
+        .fOption{
+            width: 150px;
             height: 40px;
             border: 1px solid rgba(0, 0, 0, 0.288);
-            margin: 0 0 0 750px;
+            margin-left: 20px;
             right: 0px;
             border-radius: 10px;
+            cursor: pointer;
+            position: relative;
+            display: flex;
         }   
-        #footerLanguageImg{
-            float: left;
-            width: 30px;
-            height: 30px;
-            margin: 8px 0 0 10px;
+        .countryFlag{
+            width: 35px;
+            height: 20px;
+            margin: 10px 0 0 10px;
+            border-radius: 4px;
         }
-        #footerLanguageText{
-            float: right;
-            margin: 10px 80px 0 0;
+        .countryName{
+            margin-left: 15px;
             font-size: 18px;
-            color: rgba(0, 0, 0, 0.623);
+            margin-top: 10px;
+            color: rgb(89, 89, 89);
+        }
+        .optionDiv{
+            width: auto;
+            height: auto;
+            right: 7%;
+            opacity: 0;
+            margin-top: -230px;
+            position: absolute;
+            background: white;
+            padding: 1px 0 10px 0; 
+            color: rgb(130, 130, 130); 
+            box-shadow: rgba(0, 0, 0, 0.15) 0.1rem 4rem 4rem;
+            transition: 0.4s ease;
+        }
+        .countryLoc{
+            width: 550px;
+            display: flex;
+            flex-wrap: wrap;
+            right: 25%;
+            margin-top: -170px;
+        }
+        .divTail{
+            width: 20px;
+            height: 20px;
+            background: white;
+            position: absolute;
+            margin-left: 60px;
+            bottom: -10px;
+            right: 30px;
+            transform: rotate(45deg);
+        }
+        .countryCard{
+            width: 150px;
+            display: flex;
+            margin-right: 30px;
+        }
+        .langOption{
+            width: 150px;
+            height: 20px;
+            margin: 20px 0 0 20px;
+            text-align: left;
         }
     
         #footerLinksContainer{
@@ -614,6 +663,10 @@ body, html{
             font-weight: 100;
             margin: 10px 0 10px 0;
             color: rgba(0, 0, 0, 0.479);
+            cursor: pointer;
+        }
+        .links:hover{
+            color:  rgb(97, 97, 97);
         }
         #socialMediaLinks{
             display: flex;

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel = "stylesheet" href = "css/site.css">
 </head>
 <body>
@@ -338,27 +338,95 @@
 
                     </div>
                 </div>
-            </div>
 
+                <div class="optionDiv countryLoc">
+                    <div class="countryCard">
+                        <img class="countryFlag" src="https://pixelz.cc/wp-content/uploads/2018/11/india-flag-uhd-4k-wallpaper.jpg">
+                        <p class="countryName">India</p>
+                    </div>
+                    <div class="countryCard">
+                        <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png">
+                        <p class="countryName">USA</p>
+                    </div>
+                    <div class="countryCard">
+                        <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/1200px-Flag_of_Australia_%28converted%29.svg.png">
+                        <p class="countryName">Australia</p>
+                    </div>
+                    <div class="countryCard">
+                        <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg">
+                        <p class="countryName">Brazil</p>
+                    </div>
+                    <div class="countryCard">
+                        <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/1200px-Flag_of_Canada_%28Pantone%29.svg.png">
+                        <p class="countryName">Canada</p>
+                    </div>
+                    <div class="countryCard">
+                        <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png">
+                        <p class="countryName">UK</p>
+                    </div>
+                    <div class="countryCard">
+                        <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/255px-Flag_of_Portugal.svg.png">
+                        <p class="countryName">Portugal</p>
+                    </div>
+                    <div class="countryCard">
+                        <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/1200px-Flag_of_Italy.svg.png">
+                        <p class="countryName">Italy</p>
+                    </div>
+                    <div class="countryCard">
+                        <img class="countryFlag" src="https://cdn.britannica.com/69/5869-004-7D75CD05/Flag-Argentina.jpg">
+                        <p class="countryName">Argentina</p>
+                    </div>
+                    <div class="countryCard">
+                        <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Qatar.svg">
+                        <p class="countryName">Qatar</p>
+                    </div>
+                    <div class="countryCard">
+                        <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg">
+                        <p class="countryName">New Zealand</p>
+                    </div>
+                    <div class="countryCard">
+                        <img class="countryFlag" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg">
+                        <p class="countryName">Switzerland</p>
+                    </div>
+                    <div class="divTail"></div>
+                </div>
+                <div class = 'optionDiv'>
+                    <p class="langOption">English</p>
+                    <p class="langOption">Türkçe</p>
+                    <p class="langOption">हिंदी</p>
+                    <p class="langOption">Português (BR)</p>
+                    <p class="langOption">Indonesian</p>
+                    <p class="langOption">Português (PT)</p>
+                    <p class="langOption">Español</p>
+                    <div class="divTail"></div>
+                </div>
+            </div>
     </div>
     <div id="footer">
                 <div id = "footerContainer">
                     <div id="footerBar">
                         <div id = "footerZomatoText">Zomato</div>
-                        <div id="footerLanguage">
-                            <img id = "footerLanguageImg" src="icons/language-black-18dp.svg">
-                            <p id="footerLanguageText">English</p>
+
+                        <div class="optionContainer">
+                            <div class="fOption">
+                                <img class="countryFlag" src="https://pixelz.cc/wp-content/uploads/2018/11/india-flag-uhd-4k-wallpaper.jpg">
+                                <p class="countryName">India</p>
+                            </div>
+                            <div class="fOption">
+                                <img class="countryFlag" src="icons/language-black-18dp.svg">
+                                <p class="countryName">English</p>
+                            </div>
                         </div>
                     </div>
-    
+                    
                     <div id="footerLinksContainer">
                         <div class="footerLinksCards">
                             <div class="linksHead">COMPANY</div>
-                            <div class="links">Who we Are</div>
+                            <div class="links" onclick="openFile('aboutus.html')">Who we Are</div>
                             <div class="links">Blog</div>
-                            <div class="links">Careers</div>
+                            <div class="links" onclick="openFile('career.html')">Careers</div>
                             <div class="links">Report Fraud</div>
-                            <div class="links">Contact</div>
+                            <div class="links" onclick="openFile('contact.html')">Contact</div>
                         </div>
         
                         <div class="footerLinksCards">
@@ -404,6 +472,7 @@
     </div>
 
     <script src = "js/site.js"></script>
+    <script src="js/openFile.js"></script>
     
 </body>
 </html>

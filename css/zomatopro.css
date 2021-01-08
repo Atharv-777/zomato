@@ -530,7 +530,6 @@ body, html{
         width: 100%;
         height: auto;
         display: flex;
-        
         padding-bottom: 25px;
     }
     .sectionCards{
@@ -547,6 +546,7 @@ body, html{
     .cardsLinks{
         font-size: 13px;
         color: rgb(189, 188, 188);
+        cursor: pointer;
     }
 
 #documentationsSection{

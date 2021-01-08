@@ -19,7 +19,7 @@ let phoneNumber = document.getElementById('phoneNumber');
 
 
 document.addEventListener('DOMContentLoaded', function(){
-    emailRadio.checked = true;
+    //emailRadio.checked = true;
     cityText.onfocus = function(){
         recommendations.style.visibility = "visible";
         dropDownArrow.className = 'dArrow open';
@@ -85,9 +85,7 @@ function hideOrDisplay(element, opt){
     element.style.visibility = opt;
 }
 
-function openFile(file){                                            /*Open Other HTML file*/
-    window.open(file, "_self");
-}
+
 
 
 
