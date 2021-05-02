@@ -45,6 +45,7 @@ body, html{
     margin-left: 20px;
     font-family:  Okra,Helvetica,sans-serif;
     font-size: 1.2rem;
+    cursor: pointer;
 }
 
 #head{
@@ -676,6 +677,7 @@ body, html{
             width: 30px;
             height: 30px;
             margin: 0 5px 0 5px;
+            cursor: pointer;
         }
         #download{
             margin-top: 30px;
@@ -684,4 +686,5 @@ body, html{
             width: 120px;
             height: 40px;
             margin: 0 0 5px 0;
+            cursor: pointer;
         }

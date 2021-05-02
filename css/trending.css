@@ -333,8 +333,8 @@ body, html{
         margin-left: 40px;
     }
     .optionContainer{
-        display: flex;
-        margin: 0 0 0 550px;
+        display: inline-flex;
+        margin-left: 600px;
     }
     .fOption{
         width: 150px;
@@ -433,12 +433,13 @@ body, html{
         display: flex;
         margin-top: 20px;
         margin-left: 30px;
-        margin: 20px 0 0 30px;
+        margin: 20px 0 0 0;
     }
     .socialIcon{
         width: 30px;
         height: 30px;
         margin: 0 5px 0 5px;
+        cursor: pointer;
     }
     #download{
         margin-top: 30px;
@@ -447,6 +448,7 @@ body, html{
         width: 120px;
         height: 40px;
         margin: 0 0 5px 0;
+        cursor: pointer;
     }
 
 #languages{

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/signIn.css">
+</head>
+<body>
+    <div class="signContainer">
+        <span class="title"><p>Zomato</p></span>
+        <div class="textFields" >
+            <div class="textInput">
+                <input class="text" type="email" required onfocus="textChanges(0, true)" onblur="textChanges(0, false)">
+                <div class="placeholder">
+                    <p class="placeholderText">Email ID</p>
+                    <p id="asterisk2">*</p>
+                </div>
+            </div>
+        </div>
+        <div class="textFields" >
+            <div class="textInput">
+                <input class="text" type="text" required onfocus="textChanges(1, true)" onblur="textChanges(1, false)">
+                <div class="placeholder">
+                    <p class="placeholderText">Mobile Number</p>
+                    <p id="asterisk2">*</p>
+                </div>
+            </div>
+        </div>
+        <div class="textFields" >
+            <div class="textInput">
+                <input class="text" type="password" required onfocus="textChanges(2, true)" onblur="textChanges(2, false)">
+                <div class="placeholder">
+                    <p class="placeholderText">Set Password</p>
+                    <p id="asterisk2">*</p>
+                </div>
+            </div>
+        </div>
+        <div class="textFields" >
+            <div class="textInput">
+                <input class="text" type="password" required onfocus="textChanges(3, true)" onblur="textChanges(3, false)">
+                <div class="placeholder">
+                    <p class="placeholderText">Confirm Password</p>
+                    <p id="asterisk2">*</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="submitButton">Register</div>
+        
+        <div class="register" onclick="openFile('signIn.html')"><p>Already a User? Sign In.</p></div>
+    </div>
+
+    <script src="js/contact.js"></script>
+    <script src="js/openFile.js"></script>
+</body>
+</html>

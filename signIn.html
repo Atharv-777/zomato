@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="css/signIn.css">
+</head>
+<body>
+    <div class="signContainer">
+        <span class="title"><p>Zomato</p></span>
+        <div class="textFields" >
+            <div class="textInput">
+                <input class="text" type="text" required onfocus="textChanges(0, true)" onblur="textChanges(0, false)">
+                <div class="placeholder">
+                    <p class="placeholderText">Email ID</p>
+                    <p id="asterisk2">*</p>
+                </div>
+            </div>
+        </div>
+        <div class="textFields" >
+            <div class="textInput">
+                <input class="text" type="text" required onfocus="textChanges(1, true)" onblur="textChanges(1, false)">
+                <div class="placeholder">
+                    <p class="placeholderText">Password</p>
+                    <p id="asterisk2">*</p>
+                </div>
+            </div>
+        </div>
+        <div id="submitButton">Sign In</div>
+        
+        <div class="register" onclick="openFile('signUp.html')"><p>New User? Register...!</p></div>
+    </div>
+
+    <script src="js/contact.js"></script>
+    <script src="js/openFile.js"></script>
+</body>
+</html>
