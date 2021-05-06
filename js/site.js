@@ -88,15 +88,6 @@ document.addEventListener('DOMContentLoaded', function(){
             }
         }
     }
-    
-    Arra7
-
-    /*downloadOption[0].onclick = function(){
-        jump();
-    }
-    downloadOption[1].onclick = function(){
-        jump();
-    }*/
 });
 
 function jump(){
