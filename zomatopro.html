@@ -24,16 +24,10 @@
                         <img id = "searchIcon" src="icons/search.svg">
                     </div>
                 </div>
-
-                <div id = "trendingProfile">
-                    <p class="logSign">LOGIN</p>
-                    <p class="logSign">SIGN UP</p>
-                </div>
-
                 <!-- recommendations box -->
                 <div id = "recommendations">     
                     <div id = "currentLocaion">
-                        <img id = "currentLocaionIcon" src="icons/\/icons8-location-64.png">
+                        <img id = "currentLocaionIcon" src="icons/location.png">
                         <p id="currentLocationText">Detect current location</p>
                     </div>
                     <div id = "popularText" >
@@ -49,6 +43,12 @@
                         <p class="recomCitiesText">San Fransisco</p>
                     </div>
                 </div>
+
+                <div id = "trendingProfile">
+                    <a class="logSign" href="signIn.html">LOGIN</a>
+                    <a class="logSign" href="signUp.html">SIGN UP</a>
+                </div>
+
             </div>
         </div>
 
@@ -173,17 +173,17 @@
         </div>
 
     <div id="proFooter">
-            <div id="footerContainer">
-                <div id="proFooterHeader">
+        <div id="footerContainer">
+            <div id="proFooterHeader">
                     <img id="footerZomatoLogo" src="https://b.zmtcdn.com/images/logo/zomato_flat_bg_logo.svg">
                     <div id="footerLanguage">
                         <img id = "footerLanguageImg" src="icons/white_language_icon.svg">
                         <p id="footerLanguageText">English</p>
                         <img id="dropDown" src="icons/arrow_drop_down-white-18dp.svg">
                     </div>
-                </div>
-                <div class="line"></div>
-                <div id = "languages">     
+            </div>
+            <div class="line"></div>
+            <div class = "languages">     
                     <div class="languageOptions">
                         <p class="languageText">Spanish</p>
                     </div>
@@ -211,17 +211,16 @@
                     <div class="languageOptions">
                         <p class="languageText">German</p>
                     </div>
-                </div>
-
-                <div id="customerSection">
+            </div>
+            <div id="customerSection">
                     <div class="sectionCards">
                         <p class="cardsHead">About Zomato</p>
-                        <p class="cardsLinks" onclick="openFile('aboutus.html')">About Us</p>
-                        <p class="cardsLinks">Culture</p>
-                        <p class="cardsLinks">Blog</p>
-                        <p class="cardsLinks">Careers</p>
-                        <p class="cardsLinks">Report Fraud</p>
-                        <p class="cardsLinks">Contact</p>
+                        <a class="cardsLinks" href="aboutus.html">About Us</a>
+                        <a class="cardsLinks">Culture</a>
+                        <a class="cardsLinks">Blog</a>
+                        <a class="cardsLinks" href="career.html">Careers</a>
+                        <a class="cardsLinks">Report Fraud</a>
+                        <a class="cardsLinks" href="contact.html">Contact</a>
                     </div>
 
                     <div class="sectionCards">
@@ -253,8 +252,8 @@
                         <p class="cardsLinks">Trace</p>
                         <p class="cardsLinks">Hyperpure</p>
                     </div>
-                </div>
-                <div id="countrySection">
+            </div>
+            <div id="countrySection">
 
                     <div class="sectionCards">
                         <p class="cardsHead">Country</p>
@@ -301,8 +300,8 @@
                         <p class="cardsLinks">United Kingdom</p>
                         <p class="cardsLinks">South Africa</p>
                     </div>
-                </div>
-                <div id="documentationsSection">
+            </div>
+            <div id="documentationsSection">
                     <div id="otherLinksContainers">
                         <h2 class="otherLinks">Privacy</h2>
                         <h2 class="otherLinks">Terms</h2>
@@ -316,15 +315,16 @@
                         <img class="socialIcon" src = "icons/white_instagram_icon.svg">
                         <img class="socialIcon" src = "icons/white_tweeter_icon.svg">
                     </div>
-                </div>
-
-                <p id="agreementSentence">By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. © 2008-2020 - Zomato™ Media Pvt Ltd. All rights reserved.</p>
             </div>
+
+            <p id="agreementSentence">By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. © 2008-2020 - Zomato™ Media Pvt Ltd. All rights reserved.</p>
+        </div>
     </div>
 
 
     <script src="js/zomatoPro.js"></script>
     <script src="js/openFile.js"></script>
+    <script src="js/site.js"></script>
 </body>
 </html>
 

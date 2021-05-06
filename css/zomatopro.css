@@ -110,7 +110,7 @@ body, html{
 #recommendations{
     width: 350px;
     height: auto;
-    margin: 20px 0 0 195px;
+    margin: 60px 0 0 180px;
     background: white;
     border-radius: 10px;
     color: rgb(78, 78, 78);
@@ -119,34 +119,37 @@ body, html{
     visibility: hidden;
 }
         #currentLocaion{
-            height: 68px;
+            height: 50px;
             border-radius: 10px 10px 0 0;
+            display: flex;
+            margin-bottom: 0px;
+            cursor: pointer;
         }
         #currentLocaionIcon{
-            position: absolute;
             width: 30px;
             height: 30px;
-            margin: 20px 0 0 10px;
+            margin: 10px 0 0 10px;
         }
         #currentLocationText{
-            position: absolute;
-            margin: 25px 0 0 50px;
+            margin: 15px 0 0 50px;
         }
         #popularText{
+            width: 100%;
             height: 40px;
-            padding-left: 20px;
+            display: inline-block;
         }
         .recomCities{
             width: auto;
-            height: 57px;
+            height: 40px;
             border-top: 1px solid rgba(223, 221, 221, 0.356);
+            cursor: pointer;
         }  
         .recomCities:hover{
             background: rgb(235, 235, 235);
             transition: 0.6s ease-in-out;
         } 
         .recomCitiesText{
-            margin: 20px 0 0 20px;
+            margin: 10px 0 0 20px;
         }
         #lastRecom{
             border-radius: 0 0 10px 10px;
@@ -156,13 +159,15 @@ body, html{
 #trendingProfile{
     width: 150px;
     height: 40px;
-    margin: 10px 90px 0 0;
-    color: white;
+    margin: 20px 90px 0 0;
     float: right;
     display: flex;
 }
     .logSign{
-        margin-left: 15px;
+        cursor: pointer;
+        margin-right: 10px;
+        color: white;
+        text-decoration: none;
     }
 
 #mainNavOptions{
@@ -189,12 +194,14 @@ body, html{
         width: 32px;
         height: 32px;
         margin: 2px 8px 0 10px;
+        cursor: pointer;
     }
     .navText{
         font-family: sans-serif;
         font-size: 15px;
         margin-right: 10px;
         margin: 10px 10px 0 0;
+        cursor: pointer;
     }
 
 #proBanner{
@@ -396,6 +403,7 @@ body, html{
         border: 1px solid rgba(158, 158, 158, 0.336);
         box-shadow: 0 4px 10px 10px rgba(146, 146, 146, 0.048), 0 6px 20px 10px  rgba(146, 146, 146, 0.048);
         margin: 30px 0 50px 0;
+        cursor: pointer;
     }
     .redirectButtonText{
         float: left;
@@ -477,9 +485,6 @@ body, html{
         float: left;
         border-radius: 5px;
     }
-    #footerLanguage{
-        float: right;
-    }
 
     #footerLanguage{
         width: 150px;
@@ -489,6 +494,7 @@ body, html{
         border-radius: 10px;
         background: #282c35;
         color: white;
+        cursor: pointer;
     }   
     #footerLanguageImg{
         width: 20px;
@@ -506,16 +512,32 @@ body, html{
         float: right;
         margin: -20px 10px 0 0;
     }
-    #languages{
-        width: 140px;
+    .languages{
+        width: 150px;
         height: auto;
-        position: absolute; 
-        right: 13.8%;
-        margin-top: 40px;
         background: #626a7c;
         color: white;
-        border-radius: 10px;
-        visibility: hidden;
+        border-radius: 6px;
+        position: absolute;
+        margin: -20px 0 0 950px;
+        opacity: 0;
+        transition: 0.1s ease-in-out;
+    }
+    .languageOptions{
+        width: 100%;
+        height: 40px;
+        cursor: pointer;
+        display: inline-block;
+        border-radius: 6px;
+        border-bottom: 1px solid #535763;
+    }
+    .languageOptions:hover{
+        background: #535968;
+    }
+    .languageText{
+        margin-top: 10px;
+        font-family: sans-serif;
+        font-weight: bold;
     }
 
 #customerSection{
@@ -547,6 +569,9 @@ body, html{
         font-size: 13px;
         color: rgb(189, 188, 188);
         cursor: pointer;
+        display: block;
+        text-decoration: none;
+        margin: 10px 0 10px 0;
     }
 
 #documentationsSection{

@@ -39,6 +39,7 @@ body, html{
 .appLink{
     float: left;
     font-size: 15px;
+    cursor: pointer;
 }
 .log{
     float: right;
@@ -66,7 +67,7 @@ body, html{
     margin-bottom: 30px;
 }
 
-                                                                    /*Search City and Cuisine*/ 
+                                                                    /*Top Bar Search City and Cuisine bar*/ 
 .searchCity{
     width: 760px;
     height: 55px;
@@ -172,7 +173,7 @@ body, html{
         margin-top: 25px;
     }
     #popularText{
-        height: 30px;
+        height: 40px;
         padding-left: 20px;
         margin-top: 0px;
     }
@@ -228,7 +229,7 @@ body, html{
         font-family: Okra,Helvetica,sans-serif;
     }
 
-                                                                /*Collections Cards and p tags for the selected city*/
+                                                                /*Collections Cards*/
 #collections{
     width: 1100px;
     color: black;
@@ -280,7 +281,7 @@ body, html{
     }
 
 
-                                                                        /*Popular places in the city*/
+                                                                /*Popular places in the city*/
 #popularaties{
     color: black;
     margin-top: 100px;
@@ -325,7 +326,7 @@ body, html{
         float: right;
     }
 
-
+                                                                /*Download link Form*/
 #userLink{
     width: 100%;
     height: auto;
@@ -476,7 +477,7 @@ body, html{
         margin: 10px 0 0 20px;
         cursor: pointer;
     }
-
+                                                                    /*Explore link*/
 #exploreNear{
     width: 100%;
     height: auto;
@@ -526,7 +527,7 @@ body, html{
         margin-bottom: 4px;
     }
 
-
+                                                                        /*Cities company serve*/
 #restCity{
     width: 100%;
     height: auto;
@@ -547,7 +548,7 @@ body, html{
         cursor: pointer;
     }
     
-
+                                                                                /*Footer*/
 #footer{
     width: 100%;
     height: 350px;
@@ -573,7 +574,6 @@ body, html{
             font-weight: bold;
             color:  rgba(255, 0, 0, 0.603);
         }
-
         .optionContainer{
             display: flex;
             margin: 0 0 0 550px;
@@ -649,7 +649,7 @@ body, html{
             margin: 40px 0 0 0;
             display: inline-flex;
         }
-    
+                                                                            /*Card containing Links*/
         .footerLinksCards{
             width: 200px;
             height: 200px;
@@ -665,6 +665,8 @@ body, html{
             margin: 10px 0 10px 0;
             color: rgba(0, 0, 0, 0.479);
             cursor: pointer;
+            display: block;
+            text-decoration: none;
         }
         .links:hover{
             color:  rgb(97, 97, 97);

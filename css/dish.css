@@ -915,6 +915,7 @@ body, button, textarea, input, input::-webkit-input-placeholder {
             .footerLinksCards{
                 width: 300px;
                 height: 200px;
+                margin: 0 20px 0 20px;
             }
             .linksHead{
                 font-size: 17px;
@@ -926,6 +927,8 @@ body, button, textarea, input, input::-webkit-input-placeholder {
                 margin: 10px 0 10px 0;
                 color: rgba(0, 0, 0, 0.479);
                 cursor: pointer;
+                display: block;
+                text-decoration: none;
             }
             .links:hover{
                 color:  rgb(97, 97, 97);

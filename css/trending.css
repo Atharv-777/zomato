@@ -425,6 +425,8 @@ body, html{
         font-weight: 100;
         margin: 10px 0 10px 0;
         color: rgba(0, 0, 0, 0.479);
+        display: block;
+        text-decoration: none;
     }
     .links:hover{
         color:  rgb(97, 97, 97);

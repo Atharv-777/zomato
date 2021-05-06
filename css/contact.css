@@ -114,7 +114,7 @@ body, html{
     #recommendations{
         width: 350px;
         height: auto;
-        margin: 70px 0 0 30px;
+        margin: 70px 0 0 150px;
         background: white;
         border-radius: 10px;
         color: rgb(78, 78, 78);
@@ -193,15 +193,14 @@ body, html{
         height: auto;
         padding-left: 20px;
     }
+    
     .textFields, .textArea{
         width: 90%;
         height: 33px;
-        background: white;
-        margin: 20px 0 40px 0;
+        margin: 20px 0 5px 0;
         padding: 10px;
         border-radius: 6px;
         border: 1px solid rgb(207, 207, 207);
-        position: relative;
     }
     .textInput{
         width: auto;
@@ -210,11 +209,14 @@ body, html{
         float: left;
         position: absolute;
     }
+    .list{
+        margin-bottom: 30px;
+    }
     #asterisk1,  #asterisk2, #asterisk3, #asterisk4{
         color: rgb(237, 90, 107);
         margin-top: 0px;
     }
-    .text{
+    .text, .formText{
         width: 500px;
         height: 28px;
         border: none;
@@ -256,7 +258,21 @@ body, html{
         position: absolute;
     }
 
-    #submitButton{
+    .invalidInput{
+        width: auto;
+        height: auto;
+        display: block;
+        text-align: left;
+        margin-bottom: 30px;
+        opacity: 0;
+    }
+    .invalidInput p{
+        width: 200px;
+        margin: 0px;
+        color: red;
+    }
+
+    .submitButton{
         width: 150px;
         height: 30px;
         background: rgb(237, 90, 107);
@@ -454,6 +470,8 @@ body, html{
         margin: 10px 0 10px 0;
         color: rgba(0, 0, 0, 0.479);
         cursor: pointer;
+        display: block;
+        text-decoration: none;
     }
     .links:hover{
         color:  rgb(97, 97, 97);

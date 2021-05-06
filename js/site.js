@@ -4,9 +4,10 @@ let recommendations = document.getElementById('recommendations');
 let footerLanguageText = document.getElementById('footerLanguageText');
 let languages = document.getElementById('languages');
 
-
 let emailRadio = document.getElementById('email');
 let phoneRadio = document.getElementById('phone');
+let radio = document.getElementsByClassName('radio');
+
 let form1 =  document.getElementById('form1');
 let form2 =  document.getElementById('form2');
 let invalid1 = document.getElementById('invalid1');
@@ -16,6 +17,10 @@ let eNInputText = document.getElementById('eNInputText');
 let eNButton = document.getElementById('eNButton');
 let pNumInput = document.getElementById('pNumInput');
 let phoneNumber = document.getElementById('phoneNumber');
+let downloadOption = document.getElementsByClassName('downloadOption');
+
+let emailReg = /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+)\.([a-z]{2,20})$/;
+let mobileReg = /^([0-9]{10})$/;
 
 
 document.addEventListener('DOMContentLoaded', function(){
@@ -45,15 +50,6 @@ document.addEventListener('DOMContentLoaded', function(){
         eNInputText.style.marginTop = '15px';
         eNInputText.style.fontSize = '17px';  
 
-        eNButton.onclick = function(){
-            if(emailRadio.checked === true && eNInput.value.length <= 0){
-                placeHolderChanges(eNInput, eNInputText, '1px solid red', 'rgb(255, 75, 75)', '30px', '0.5s ease', 'absolute');
-                eNInputText.style.marginTop = '-6px';
-                eNInputText.style.fontSize = '12px';  
-                invalid1.style.display = 'block';
-                console.log('emailBlank');
-            }
-        }
     }   
     phoneRadio.onclick = function(){
         phoneRadio.checked = true;
@@ -61,17 +57,56 @@ document.addEventListener('DOMContentLoaded', function(){
         hideOrDisplay(form1, 'hidden');
         invalid1.style.display = 'none';
         console.log('phoneClicked');
-        placeHolderChanges(phoneNumber, cCodeText, '1px solid rgb(177, 177, 177)', 'rgb(150, 150, 150)', '30px', '0.5s ease', 'absolute')
-        
+        placeHolderChanges(phoneNumber, cCodeText, '1px solid rgb(177, 177, 177)', 'rgb(150, 150, 150)', '30px', '0.5s ease', 'absolute');
+    }
 
-        eNButton.onclick = function(){
-            if(phoneRadio.checked === true && eNInput.value.length <= 0){
-                placeHolderChanges(phoneNumber, cCodeText, '1px solid red', 'rgb(255, 75, 75)', '30px', '0.5s ease', 'absolute');
-                invalid2.style.display = 'block';
+    eNButton.onclick = function(){
+        if(radio[0].checked == true && eNInput.value.length <= 0)
+            alert('Enter email');
+        else if(radio[1].checked == true && pNumInput.value.length <= 0)
+            alert('Enter mobile number');
+        else{
+            if(radio[0].checked == true){
+                if(emailReg.test(eNInput.value)){
+                    alert('Link will be send on your email id');
+                    invalid1.style.display = 'none';
+                }
+                else{
+                    console.log('Invalid Email');
+                    invalid1.style.display = 'block';
+                }
+            }
+            if(radio[1].checked == true){
+                if(mobileReg.test(pNumInput.value)){
+                    alert('Link will be send on your mobile number');
+                    invalid2.style.display = 'none';
+                }
+                else{
+                    console.log('Invalid mobile number');
+                    invalid2.style.display = 'block';
+                }
             }
         }
     }
+    
+    Arra7
+
+    /*downloadOption[0].onclick = function(){
+        jump();
+    }
+    downloadOption[1].onclick = function(){
+        jump();
+    }*/
 });
+
+function jump(){
+    window.scroll({
+        top: 1636, 
+        left: 0, 
+        behavior: 'smooth'
+    });
+}
+
 
 function placeHolderChanges(elm1, elm2, border, color, width, tran, pos){
         elm1.style.border = border;

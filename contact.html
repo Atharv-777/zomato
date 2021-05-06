@@ -33,7 +33,7 @@
             <!-- recommendations box -->
             <div id = "recommendations">     
                 <div id = "currentLocaion">
-                    <img id = "currentLocaionIcon" src="icons/\/icons8-location-64.png">
+                    <img id = "currentLocaionIcon" src="icons/location.png">
                     <p id="currentLocationText">Detect current location</p>
                 </div>
                 <div id = "popularText" >
@@ -56,9 +56,9 @@
 
         <div class="grievanceForm">
             <div class="form">
-                <div class="textFields" >
+                <div class="textFields list" >
                     <div class="textInput">
-                        <input class="text" type="text" required>
+                        <input class="formText" type="text" required>
                         <div class="placeholder">
                             <p class="placeholderText">How can we help you?</p>
                             <p id="asterisk1">*</p>
@@ -68,40 +68,45 @@
                 </div>
                 <div class="textFields" >
                     <div class="textInput">
-                        <input class="text" type="text" required onfocus="textChanges(1, true)" onblur="textChanges(1, false)">
+                        <input class="formText" type="text" required onfocus="textChanges(1, true)" onblur="textChanges(1, false)">
                         <div class="placeholder">
-                            <p class="placeholderText">Full Name?</p>
+                            <p class="placeholderText">Full Name</p>
                             <p id="asterisk2">*</p>
                         </div>
                     </div>
                 </div>
+                <div class="invalidInput"><p>Invalid Name</p></div>
+
                 <div class="textFields" >
                     <div class="textInput">
-                        <input class="text" type="text" onfocus="textChanges(2, true)" onblur="textChanges(2, false)" required>
+                        <input class="formText" type="text" onfocus="textChanges(2, true)" onblur="textChanges(2, false)" required>
                         <div class="placeholder">
                             <p class="placeholderText">Email Address</p>
                             <p id="asterisk3">*</p>
                         </div>
                     </div>
                 </div>
+                <div class="invalidInput"><p>Invalid Email</p></div>
+
                 <div class="textFields" >
                     <div class="textInput">
-                    <input class="text" type="text" onfocus="textChanges(3, true)" onblur="textChanges(3, false)">
+                    <input class="formText" type="text" onfocus="textChanges(3, true)" onblur="textChanges(3, false)">
                     <div class="placeholder">
                         <p class="placeholderText">Mobile Number(Optional)</p>
                     </div>
                     </div>
                 </div>
+                <div class="invalidInput"><p>Invalid Mobile Number</p></div>
                 <div class="textFields textArea">
                     <div class="textInput">
-                        <input class="text" type="text" onfocus="textChanges(4, true)" onblur="textChanges(4, false)">
+                        <input class="formText" type="text" onfocus="textChanges(4, true)" onblur="textChanges(4, false)">
                         <div class="placeholder">
                             <p class="placeholderText">Type Here</p>
                             <p id="asterisk4">*</p>
                         </div>  
                     </div>
                 </div>
-                <div id="submitButton">Submit feedback</div>
+                <div class="submitButton">Submit feedback</div>
                 
             </div>
 
@@ -267,35 +272,38 @@
 
             <div id="footerLinksContainer">
                 <div class="footerLinksCards">
-                    <div class="linksHead">COMPANY</div>
-                    <div class="links" onclick="openFile('aboutus.html')">Who we Are</div>
-                    <div class="links">Blog</div>
-                    <div class="links" onclick="openFile('career.html')">Careers</div>
-                    <div class="links">Report Fraud</div>
-                    <div class="links">Contact</div>
+                    <a class="linksHead">COMPANY</a>
+                    <a class="links" href = "aboutus.html">Who we Are</a>
+                    <a class="links">Blog</a>
+                    <a class="links" href = "career.html">Careers</a>
+                    <a class="links">Report Fraud</a>
+                    <a class="links" href = "contact.html">Contact</a>
                 </div>
+
                 <div class="footerLinksCards">
-                    <div class="linksHead">FOR FOODIES</div>
-                    <div class="links">Code for Conduct</div>
-                    <div class="links">Community</div>
-                    <div class="links">Blogger Help</div>
-                    <div class="links">Developers</div>
-                    <div class="links">Mobile Apps</div>
+                    <a class="linksHead">FOR FOODIES</a>
+                    <a class="links">Code for Conduct</a>
+                    <a class="links">Community</a>
+                    <a class="links">Blogger Help</a>
+                    <a class="links">Developers</a>
+                    <a class="links">Mobile Apps</a>
                 </div>
+
                 <div class="footerLinksCards">
-                    <div class="linksHead">FOR RESTAURANTS</div>
-                    <div class="links">Add Restaurant</div>
-                    <div class="links">Claim your Listing</div>
-                    <div class="links">Business App</div>
-                    <div class="links">Restaurant Widgets</div>
-                    <div class="links">Products for Businesses</div>
+                    <a class="linksHead">FOR RESTAURANTS</a>
+                    <a class="links">Add Restaurant</a>
+                    <a class="links">Claim your Listing</a>
+                    <a class="links">Business App</a>
+                    <a class="links">Restaurant Widgets</a>
+                    <a class="links">Products for Businesses</a>
                 </div>
+
                 <div class="footerLinksCards">
-                    <div class="linksHead">FOR YOU</div>
-                    <div class="links">Privacy</div>
-                    <div class="links">Terms</div>
-                    <div class="links">Security</div>
-                    <div class="links">Sitemap</div>
+                    <a class="linksHead">FOR YOU</a>
+                    <a class="links">Privacy</a>
+                    <a class="links">Terms</a>
+                    <a class="links">Security</a>
+                    <a class="links">Sitemap</a>
                 </div>
                 <div class="footerLinksCards">
                     <div class="linksHead">SOCIAL LINKS</div>
@@ -305,8 +313,8 @@
                         <img class="socialIcon" src = "icons/white_tweeter_icon.svg">
                     </div>
                     <div id = "download">
-                        <img href = "https://bnc.lt/download-z-android"  class = "downloadOption" src = "https://yourdolphin.com/assets/upload/google_play_badge.png">
-                        <img href = "https://bnc.lt/download-zomato-ios" class = "downloadOption" src = "https://process.fs.holonis.com/resize=w:1200/rotate=deg:exif/quality=v:70/compress/XWwL5rGGQjexTMQPGZNU">
+                        <img class = "downloadOption" src = "https://yourdolphin.com/assets/upload/google_play_badge.png">
+                        <img class = "downloadOption" src = "https://process.fs.holonis.com/resize=w:1200/rotate=deg:exif/quality=v:70/compress/XWwL5rGGQjexTMQPGZNU">
                     </div>
                 </div>
             </div>
@@ -315,6 +323,7 @@
 
     <script src="js/contact.js"></script>
     <script src="js/openFile.js"></script>
+    
     
 </body>
 </html>

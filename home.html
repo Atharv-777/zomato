@@ -8,10 +8,10 @@
 </head>
 <body>
     <div id = "homePage">
-            <div id = "imgContainer">
+        <div id = "imgContainer">
                 <img id = "burger" src="img/zomato.jpg" alt="Zomato">
-            </div>      
-            <div class="nav" style="margin: 0 auto;">
+        </div>      
+        <div class="nav" style="margin: 0 auto;">
                 <div id = "homeTopNav">
                     <p class="appLink">Get the App</p>
                     <p class="log" onclick="openFile('signUp.html')">Sign Up</p>
@@ -105,7 +105,7 @@
                     </div>
                 </div>
 
-
+                <!--Cities offering to-->
                 <div id = "popularaties">
                     <p id = "popularHeading">Popular localities in and around New York</p> 
                         <div id = "placesCardContainer">
@@ -148,6 +148,7 @@
                         </div>
                 </div>
 
+                <!--Form for user to get the app link-->
                 <div id="userLink">
                     <div id="mobImgContainer">
                         <img id="mobImg" src="https://b.zmtcdn.com/data/pro/5722d9e687511d79616bcab92470734e1596187147.png">
@@ -164,14 +165,11 @@
                             <label class="radioText"><input class="radio" id="phone" type="radio" name="radio"/>Phone</label>
 
                         </div>
-
                         <div id="emailNumberInput" name="form">
                             <div id="form1">
                                 <label id="eNInputText">Email</label> 
                                 <input id="eNInput" type="text" name="text">
                             </div>
-
-
                             <div id="form2">
                                 <div id="phoneNumber">
                                     <div id="cCode">
@@ -182,10 +180,8 @@
                             </div>
                             <div id="eNButton"><p>Share App Link</p></div>
                         </div>
-
-                        <p id="invalid1">Please enter your email id</p>
-                        <p id="invalid2">Please enter your mobile number</p>
-
+                        <p id="invalid1">Please enter valid email id(eg. john123@hotmail.com)</p>
+                        <p id="invalid2">Please enter valid mobile number containing 10 digit number</p>
                         <p id="dFromText">Download app from</p>
                         <div id="dFromOptions">
                             <img href = "https://bnc.lt/download-z-android"  class = "dFromIcons" src = "https://yourdolphin.com/assets/upload/google_play_badge.png">
@@ -194,6 +190,7 @@
                     </div>
                 </div>
 
+                <!--Links for user to explore dish's category near user-->
                 <div id="exploreNear">
                     <h1 id="exploreHead">Explore other options for you here</h1>
                     <div class="exploreCuisines">
@@ -276,7 +273,8 @@
                         </div>
                     </div>
                 </div>
-
+                
+                <!--Links to restaurant chain near user-->
                 <div id="restCity">
                     <h1 class="cuisinesHead">Top Restaurant Chains</h1>
                     <div id="chainLinkContainer">
@@ -290,6 +288,7 @@
                     </div>
                 </div>
 
+                <!--List of cities comapany serves to-->
                 <div id="restCity">
                     <h1 class="cuisinesHead">Cities We Deliver To</h1>
                     <div id="chainLinkContainer">
@@ -400,59 +399,60 @@
                     <p class="langOption">Español</p>
                     <div class="divTail"></div>
                 </div>
-            </div>
+        </div>
     </div>
-    <div id="footer">
-                <div id = "footerContainer">
-                    <div id="footerBar">
-                        <div id = "footerZomatoText">Zomato</div>
 
-                        <div class="optionContainer">
-                            <div class="fOption">
-                                <img class="countryFlag" src="https://pixelz.cc/wp-content/uploads/2018/11/india-flag-uhd-4k-wallpaper.jpg">
-                                <p class="countryName">India</p>
-                            </div>
-                            <div class="fOption">
-                                <img class="countryFlag" src="icons/language-black-18dp.svg">
-                                <p class="countryName">English</p>
-                            </div>
-                        </div>
+    <div id="footer">
+        <div id = "footerContainer">
+            <div id="footerBar">
+                <div id = "footerZomatoText">Zomato</div>
+
+                <div class="optionContainer">
+                    <div class="fOption">
+                        <img class="countryFlag" src="https://pixelz.cc/wp-content/uploads/2018/11/india-flag-uhd-4k-wallpaper.jpg">
+                        <p class="countryName">India</p>
                     </div>
-                    
-                    <div id="footerLinksContainer">
+                    <div class="fOption">
+                        <img class="countryFlag" src="icons/language-black-18dp.svg">
+                        <p class="countryName">English</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="footerLinksContainer">
                         <div class="footerLinksCards">
-                            <div class="linksHead">COMPANY</div>
-                            <div class="links" onclick="openFile('aboutus.html')">Who we Are</div>
-                            <div class="links">Blog</div>
-                            <div class="links" onclick="openFile('career.html')">Careers</div>
-                            <div class="links">Report Fraud</div>
-                            <div class="links" onclick="openFile('contact.html')">Contact</div>
+                            <a class="linksHead">COMPANY</a>
+                            <a class="links" href = "aboutus.html">Who we Are</a>
+                            <a class="links">Blog</a>
+                            <a class="links" href = "career.html">Careers</a>
+                            <a class="links">Report Fraud</a>
+                            <a class="links" href = "contact.html">Contact</a>
                         </div>
         
                         <div class="footerLinksCards">
-                            <div class="linksHead">FOR FOODIES</div>
-                            <div class="links">Code for Conduct</div>
-                            <div class="links">Community</div>
-                            <div class="links">Blogger Help</div>
-                            <div class="links">Developers</div>
-                            <div class="links">Mobile Apps</div>
+                            <a class="linksHead">FOR FOODIES</a>
+                            <a class="links">Code for Conduct</a>
+                            <a class="links">Community</a>
+                            <a class="links">Blogger Help</a>
+                            <a class="links">Developers</a>
+                            <a class="links">Mobile Apps</a>
                         </div>
         
                         <div class="footerLinksCards">
-                            <div class="linksHead">FOR RESTAURANTS</div>
-                            <div class="links">Add Restaurant</div>
-                            <div class="links">Claim your Listing</div>
-                            <div class="links">Business App</div>
-                            <div class="links">Restaurant Widgets</div>
-                            <div class="links">Products for Businesses</div>
+                            <a class="linksHead">FOR RESTAURANTS</a>
+                            <a class="links">Add Restaurant</a>
+                            <a class="links">Claim your Listing</a>
+                            <a class="links">Business App</a>
+                            <a class="links">Restaurant Widgets</a>
+                            <a class="links">Products for Businesses</a>
                         </div>
         
                         <div class="footerLinksCards">
-                            <div class="linksHead">FOR YOU</div>
-                            <div class="links">Privacy</div>
-                            <div class="links">Terms</div>
-                            <div class="links">Security</div>
-                            <div class="links">Sitemap</div>
+                            <a class="linksHead">FOR YOU</a>
+                            <a class="links">Privacy</a>
+                            <a class="links">Terms</a>
+                            <a class="links">Security</a>
+                            <a class="links">Sitemap</a>
                         </div>
         
                         <div class="footerLinksCards">
@@ -463,12 +463,12 @@
                                 <img class="socialIcon" src = "icons/white_tweeter_icon.svg">
                             </div>
                             <div id = "download">
-                                <img href = "https://bnc.lt/download-z-android"  class = "downloadOption" src = "https://yourdolphin.com/assets/upload/google_play_badge.png">
-                                <img href = "https://bnc.lt/download-zomato-ios " class = "downloadOption" src = "https://process.fs.holonis.com/resize=w:1200/rotate=deg:exif/quality=v:70/compress/XWwL5rGGQjexTMQPGZNU">
+                                <img class = "downloadOption" src = "https://yourdolphin.com/assets/upload/google_play_badge.png">
+                                <img class = "downloadOption" src = "https://process.fs.holonis.com/resize=w:1200/rotate=deg:exif/quality=v:70/compress/XWwL5rGGQjexTMQPGZNU">
                             </div>
                         </div>
-                    </div>
-                </div>
+            </div>
+        </div>
     </div>
 
     <script src = "js/site.js"></script>
